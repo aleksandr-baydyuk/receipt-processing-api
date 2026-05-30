@@ -63,7 +63,7 @@ async def analyze_receipt(file: UploadFile = File(...)) -> ReceiptData:
         "Extract structured JSON data from this receipt photo. "
         "Return only data visible or strongly inferable from the receipt. "
         "For merchant use the store/company name. "
-        "For purchase_date use YYYY-MM-DD. If the year is missing, infer it only when obvious; otherwise use null. "
+        "For purchase_date use YYYY-MM-DDTHH:MM:SS. If the year is missing, infer it only when obvious; otherwise use null. "
         "For items, include purchasable goods/services only, not subtotals, taxes, totals, payment lines, or change. "
         "For each item, name should preserve the receipt wording, quantity should be numeric, "
         "and price should be the line total price. Use null for unreadable values."
