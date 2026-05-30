@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.env
+.git/
+.idea
+.venv/
+venv/
+dist/
+build/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
