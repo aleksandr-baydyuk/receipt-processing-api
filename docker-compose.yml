@@ -1,5 +1,7 @@
+name: receipt-processor
+
 services:
-  receipt-api:
+  api:
     build: .
     ports:
       - "8000:8000"
